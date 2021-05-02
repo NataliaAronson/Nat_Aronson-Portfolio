@@ -1,0 +1,727 @@
+.main-content {
+  max-width: 1170px;
+  margin-top: 110px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: fit-content;
+  width: 87vw;
+  margin-left: 6%;
+  padding: 10px;
+  z-index: 2;
+}
+
+#nav {
+  background-color: #fff;
+  color: black;
+  width: 100%;
+  padding-left: 3%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header__logo {
+  background-color: #f2f2f2;
+}
+
+.header__list {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+}
+
+.header__link {
+  color: black;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: palevioletred;
+}
+
+
+
+/* Адаптивность блока header */
+@media screen and (min-width:320px) and (max-width:767px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+  }
+
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    margin-left: auto;
+  }
+}
+
+
+
+
+
+/*БЛОК ОБО МНЕ*/
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #ffe2e2;
+  padding-bottom: 30px;
+
+}
+
+.about__title {
+  font-family: 'Open Sans';
+  font-size: 42px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.about__text_main {
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.about__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+  margin-left: 300px;
+  margin-right: 200px;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.about__image-star {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 20px;
+}
+
+
+/*Адаптивность блока Обо мне*/
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+  #about {
+    width: fit-content;
+
+  }
+
+  .about__text {
+
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+  }
+
+  .about__text_main {
+    margin-left: 60px;
+    margin-right: 40px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+
+
+  .about__text {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+}
+
+
+/*БЛОК КОНТАКТЫ*/
+
+#contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.contacts__tel-text,
+.contacts__vk,
+.contacts__insta,
+.contacts__mary-kay {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 80px;
+  color: rgb(53, 51, 51);
+  text-decoration: none;
+}
+
+.contacts__vk:hover {
+  color: palevioletred;
+}
+
+.contacts__insta:hover {
+  color: palevioletred;
+}
+
+.contacts__tel:hover {
+  color: palevioletred;
+}
+
+.contacts__mary-kay:hover {
+  color: palevioletred;
+}
+
+.contacts__tel-icon,
+.contacts__vk-icon,
+.contacts__insta-icon,
+.contacts__cosmetics-icon {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.contacts__title {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: 'Open Sans';
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contacts__tel-text,
+.contacts__vk-text,
+.contacts__insta-text {
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.contacts__mary-kay-text {
+  margin-top: 0px;
+  margin-left: 70px;
+}
+
+
+/*Адаптивность блока КОНТАКТЫ*/
+@media screen and (min-width:320px) and (max-width:767px) {
+
+  #contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .contacts__title {
+    margin-left: 20px;
+
+  }
+
+  .contacts__tel-block {
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+
+
+  .contacts__tel-text,
+  .contacts__vk,
+  .contacts__insta,
+  .contacts__mary-kay {
+    margin-left: 50px;
+    margin-bottom: 40px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  .contacts__title {
+    margin-left: 85px;
+  }
+}
+
+/* Стили для первого блока - Natasha Gaevskaia */
+
+.hero {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-height: 600px;
+  max-width: 100%;
+  margin-bottom: 120px;
+}
+
+.hero__content_leftside {
+  flex: 0 1 50%;
+}
+
+.hero__image {
+  width: 520px;
+  height: 550px;
+}
+
+.hero__content_rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 0 1 50%;
+}
+
+.hero__quote {
+  min-height: 96px;
+  text-align: left;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-size: 22px;
+  color: palevioletred;
+  border: 2px solid palevioletred;
+  margin: 16px 31px 31px 16px;
+  padding: 16px 24px;
+  box-shadow: 15px 15px 0 0 #ffeded;
+}
+
+
+.hero__about {
+  text-align: left;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.hero__name {
+  color: palevioletred;
+}
+
+/* Адаптивность для первого блока */
+@media screen and (min-width:320px) and (max-width:767px) {
+  .hero__about {
+    text-align: left;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(0, 0, 0);
+  }
+
+  .hero {
+    margin-bottom: 700px;
+  }
+
+  ;
+
+  .hero__quote {
+    font-size: 15px;
+  }
+
+  .hero__image {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  .hero__image {
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .hero {
+    margin-bottom: 450px;
+  }
+
+}
+
+/*мероприятия*/
+* {
+  box-sizing: border-box;
+}
+
+
+/*вместо body будет events*/
+.container1 {
+  font-family: 'Open Sans';
+  background-color: #f1f1f1;
+  padding: 20px;
+
+
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*начало - алена вставка*/
+.events__title {
+  font-family: 'Open Sans';
+  font-size: 56px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+}
+
+/*конец - алена вставка*/
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+
+}
+
+.content {
+
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .events__title {
+    font-family: 'Open Sans';
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .column {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .events__title {
+    font-family: 'Open Sans';
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+/*--------------------
+     Reviews Section
+--------------------*/
+
+.reviews {
+
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.reviews__title {
+  font-family: 'Open Sans';
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+}
+
+.reviews .quote {
+
+  font-family: 'Open Sans';
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.reviews .author {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.reviews .author:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+
+  .reviews .quote {
+    font-family: 'Open Sans';
+    font-size: 20px;
+  }
+
+  .reviews .author {
+    font-size: 16px;
+  }
+}
+
+/*КНОПКА ДЛЯ ЗАПИСИ НА МЕРОПРИЯТИЯ*/
+/*btn0 - кнопка для header-меню*/
+.btn0 {
+  width: 90px;
+  height: 25px;
+  background-color: pink;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btntext0 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 10px;
+  font: bold;
+  font-weight: 300;
+  line-height: 10px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #333333;
+}
+
+/*btn1 - кнопка для первых двух колонок*/
+.btn1 {
+  width: 150px;
+  height: 50px;
+  background-color: pink;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  background-color: pink;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  background-color: #ff99ad;
+}
+
+.btntext {
+  font-size: 15px;
+  font: bold;
+  font-weight: 250;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #333333;
+}
+
+/*фотографии и сертификаты*/
+
+
+/*1. Laptop*/
+@media screen and (min-width: 1025px) {
+
+  .gallery_tittle {
+    font-family: 'Open Sans';
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .container_photo {
+    width: 900px;
+    /*  max-height: 1035px; */
+    margin: 0vh auto;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 350px 300px;
+    -ms-grid-row-align: center;
+    grid-row-gap: 60px;
+    grid-column-gap: 10px;
+  }
+}
+
+.slide4,
+.slide5,
+.slide6 {
+  height: 100%;
+}
+
+
+/*2. iPad*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+  .gallery_tittle {
+    font-family: 'Open Sans';
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .container_photo {
+    width: 600px;
+    /*  max-height: 1035px; */
+    margin: 0vh auto;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 400px 400px 400px;
+    -ms-grid-row-align: center;
+    grid-gap: 10px;
+  }
+
+  .slide4 {
+    height: 70%;
+    align-self: center;
+  }
+}
+
+/*3. Phone*/
+@media screen and (max-width: 600px) {
+  .gallery_tittle {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .container_photo {
+    width: 300px;
+    /*  max-height: 1035px; */
+    margin: 0vh auto;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 400px 400px 400px 200px 400px 400px;
+    -ms-grid-row-align: center;
+    grid-gap: 10px;
+  }
+}
+
+#gallery img {
+  width: 300px;
+  -webkit-transition-duration: 0.6s;
+  /*Webkit: animation duration*/
+  -moz-transition-duration: 0.6s;
+  /*Mozilla: animation duration*/
+  -o-transition-duration: 0.6s;
+  /*Opera: animation duration*/
+  opacity: 0.9;
+  /*initial opacity of the image*/
+  z-index: 1;
+  /*place non-hover images behind the hover image*/
+  margin: 0;
+  /*remove default margin for images*/
+  position: relative;
+  /*solve the problem with z-index in Chrome*/
+}
+
+
+#gallery img:hover {
+  -webkit-transform: scale(1.5);
+  /*Webkit: increase size to 1.5x*/
+  -moz-transform: scale(1.5);
+  /*Mozilla: scaling*/
+  -o-transform: scale(1.5);
+  /*Opera: scaling*/
+  box-shadow: 0px 0px 25px gray;
+  /*CSS3 shadows: 25px fuzzy shadow around the entire image*/
+  -webkit-box-shadow: 0px 0px 25px gray;
+  /*Webkit: shadows*/
+  -moz-box-shadow: 0px 0px 25px gray;
+  /*Mozilla: shadows*/
+  opacity: 1;
+  /*default opacity*/
+  z-index: 10;
+  /*place hover image in front the non-hover images*/
+}
+
+© 2021 GitHub,
+Inc.
